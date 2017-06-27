@@ -15,6 +15,7 @@
 		E357DDB31F020AE400E3054D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E357DDB11F020AE400E3054D /* LaunchScreen.storyboard */; };
 		E357DDBE1F020AE400E3054D /* PopoverTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357DDBD1F020AE400E3054D /* PopoverTestTests.swift */; };
 		E357DDC91F020AE400E3054D /* PopoverTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357DDC81F020AE400E3054D /* PopoverTestUITests.swift */; };
+		E357DDD71F02137000E3054D /* ImageInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357DDD61F02137000E3054D /* ImageInformationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		E357DDC41F020AE400E3054D /* PopoverTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PopoverTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E357DDC81F020AE400E3054D /* PopoverTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverTestUITests.swift; sourceTree = "<group>"; };
 		E357DDCA1F020AE400E3054D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E357DDD61F02137000E3054D /* ImageInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInformationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				E357DDA51F020AE400E3054D /* AppDelegate.swift */,
 				E357DDA71F020AE400E3054D /* ViewController.swift */,
+				E357DDD61F02137000E3054D /* ImageInformationViewController.swift */,
 				E357DDA91F020AE400E3054D /* Main.storyboard */,
 				E357DDAF1F020AE400E3054D /* Assets.xcassets */,
 				E357DDB11F020AE400E3054D /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				E357DDA81F020AE400E3054D /* ViewController.swift in Sources */,
 				E357DDA61F020AE400E3054D /* AppDelegate.swift in Sources */,
 				E357DDAE1F020AE400E3054D /* PopoverTest.xcdatamodeld in Sources */,
+				E357DDD71F02137000E3054D /* ImageInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
