@@ -9,6 +9,20 @@
 import UIKit
 
 class ImageInformationViewController: UIViewController {
+    
+    // MARK: Outlets
+    
+    @IBOutlet weak var imageHeight: UITextField!
+    @IBOutlet weak var imageWidth: UITextField!
+    @IBOutlet weak var imageColorspace: UITextField!
+    
+    
+    
+    
+    // MARK: Properties
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
