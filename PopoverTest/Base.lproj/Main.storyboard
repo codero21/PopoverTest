@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,20 +18,26 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dRA-2h-UZn">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="1068" width="834" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="OXm-0b-PLd"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem title="Image Information" id="1uc-jI-heB"/>
+                                    <barButtonItem title="Image Information" id="1uc-jI-heB">
+                                        <connections>
+                                            <segue destination="mnY-kP-POM" kind="popoverPresentation" identifier="imageInformationSegue" popoverAnchorBarButtonItem="1uc-jI-heB" id="cZv-9c-eHR">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-cI-HDC">
-                                <rect key="frame" x="0.0" y="40" width="375" height="583"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-cI-HDC">
+                                <rect key="frame" x="0.0" y="20" width="834" height="1048"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,7 +45,7 @@
                             <constraint firstAttribute="trailing" secondItem="TlQ-cI-HDC" secondAttribute="trailing" id="Dd4-az-z02"/>
                             <constraint firstItem="dRA-2h-UZn" firstAttribute="top" secondItem="TlQ-cI-HDC" secondAttribute="bottom" id="O3C-nb-a9G"/>
                             <constraint firstItem="dRA-2h-UZn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RN7-vM-Id2"/>
-                            <constraint firstItem="TlQ-cI-HDC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="TMR-lt-Q7h"/>
+                            <constraint firstItem="TlQ-cI-HDC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="V4b-du-32n"/>
                             <constraint firstAttribute="trailing" secondItem="dRA-2h-UZn" secondAttribute="trailing" id="ht1-of-XKv"/>
                             <constraint firstItem="TlQ-cI-HDC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o1L-7d-0OI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dRA-2h-UZn" secondAttribute="bottom" id="oCM-7W-vEi"/>
@@ -96,7 +102,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hS-7D-MqZ">
                                 <rect key="frame" x="155" y="36" width="204" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="MFY-NV-nb5"/>
                                 </constraints>
@@ -106,7 +112,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-Gj-y36">
                                 <rect key="frame" x="155" y="84" width="204" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="jLH-rw-ixu"/>
                                 </constraints>
@@ -116,7 +122,7 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QYE-Lr-eEq">
                                 <rect key="frame" x="155" y="132" width="204" height="30"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="OWH-c9-klz"/>
                                 </constraints>

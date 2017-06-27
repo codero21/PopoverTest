@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +21,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popover Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fci-6y-C6V">
+                                <rect key="frame" x="106" y="213" width="163" height="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2017 Francois' Technology ltd. All rights reserved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4X-Xi-X3O">
+                                <rect key="frame" x="26" y="626" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fci-6y-C6V" secondAttribute="trailing" constant="106" id="31G-wi-pM7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="L4X-Xi-X3O" secondAttribute="trailing" constant="10" id="CA4-Ed-cgx"/>
+                            <constraint firstItem="L4X-Xi-X3O" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="10" id="F84-e7-8q1"/>
+                            <constraint firstItem="L4X-Xi-X3O" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MBK-YI-z1N"/>
+                            <constraint firstItem="fci-6y-C6V" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="106" id="RjI-01-or0"/>
+                            <constraint firstItem="L4X-Xi-X3O" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="606" id="Wlm-Ba-LVr"/>
+                            <constraint firstItem="fci-6y-C6V" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="193" id="jHM-iI-mYr"/>
+                            <constraint firstItem="fci-6y-C6V" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jeO-Um-Tdv"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="L4X-Xi-X3O" secondAttribute="bottom" constant="20" id="rHO-xW-iqJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
