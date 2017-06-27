@@ -11,16 +11,26 @@ import UIKit
 class ViewController: UIViewController {
     
     // MARK: Outlets
+    
     @IBOutlet weak var imageView: UIImageView!
     
     
     
+    // MARK: Properties
     
+    var image: UIImage!
     
+  
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        image = UIImage(named: "Sunflower")
+        
+        imageView.image = image
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +38,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "imageInformationSegue" {
+            let viewController: ImageInformationViewController = segue.destination as! ImageInformationViewController
+            viewController.imageBeingDisplayed = self.image
+            
+        }
+    }
+    
+    
 }
 
