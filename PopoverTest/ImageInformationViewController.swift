@@ -15,19 +15,22 @@ class ImageInformationViewController: UIViewController {
     @IBOutlet weak var imageHeight: UITextField!
     @IBOutlet weak var imageWidth: UITextField!
     @IBOutlet weak var imageColorspace: UITextField!
-    
-    
-    
+
     
     // MARK: Properties
-    
-    
+    var imageBeingDisplayed: UIImage!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let imageSize = imageBeingDisplayed.size
+        let height = imageSize.height
+        let width = imageSize.width
+        
+        imageHeight.text = "\(height)"
+        imageWidth.text = "\(width)"
+        imageColorspace.text = "RGB"
     }
 
     override func didReceiveMemoryWarning() {
